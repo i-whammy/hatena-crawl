@@ -1,32 +1,11 @@
 # hatena
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Get hot entries from hatena book mark for a specific category and output into csv file.
 
 ## Usage
 
-FIXME: explanation
 
-    $ java -jar hatena-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+    $ java -jar hatena-0.1.0-standalone.jar {any category value}
 
 ## License
 
