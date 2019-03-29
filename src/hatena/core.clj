@@ -12,12 +12,12 @@
 
 (defn get-items [url] (filter #(= :item (:tag %)) (get-in (xml/parse url) [:content])))
 
-(defn create-content-set [items]
-  (reduce (fn [cols n] (conj cols (filter-contents n))) [] items))
-
 (defn filter-contents [tags]
   (let [content (:content tags)]
     (filter #(content-keys (:tag %)) content)))
+
+(defn create-content-set [items]
+  (reduce (fn [cols n] (conj cols (filter-contents n))) [] items))
 
 (defn filter-content-from-link-set [link-set] (reduce (fn [cols n] (conj cols (map #(first (:content %)) n)) ) [] link-set))
 
